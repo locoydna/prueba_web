@@ -12,7 +12,7 @@
     <div class="container">
         <h1>¡Bienvenido a nuestra página!</h1>
         <p>Sitio web de muestra para una empresa ficticia</p>
-        <a href="#features" class="btn">Ver características</a>
+        <a href="#features" class="btn">Ver características</a> <!--el btn  en el header sin una etiqueta adecuada  ejemplo: <nav><a href="#features" class="btn">Ver características</a></nav>   -->
     </div>
 </header>
 
@@ -39,7 +39,7 @@
         <h2>Testimonios</h2>
         <div class="testimonial">
             <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p>
-            <cite>- Cliente feliz</cite>
+            <cite>- Cliente feliz</cite> <!-- el uso <cite> deberia ser acompañado o deberia estar dentro de un blockqoute para mejorar la semantica    -->
         </div>
         <div class="testimonial">
             <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
@@ -51,11 +51,11 @@
 <section id="contact">
     <div class="container">
         <h2>Contacto</h2>
-        <form action="#" method="post">
+        <form action="#" method="post"> <!-- el formulario esta usando # lo que no enviara nada  como ejemplo el codigo cambiaria  a <form action = "procesar.php" method="post">     -->
             <input type="text" name="name" placeholder="Nombre" required>
             <input type="email" name="email" placeholder="Correo electrónico" required>
             <textarea name="message" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar mensaje</button>
+            <button type="submit" class="btn">Enviar mensaje</button><!--el boton enviar mensaje sin accesibilidad   -->
         </form>
     </div>
 </section>
