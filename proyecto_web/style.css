@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} /* falta agregar  box-sizing:border-box en el body  esto ayuda a que no se dejausten los margenes*/
 
 .container {
     width: 80%;
@@ -10,7 +10,7 @@ body {
     padding: 20px 0;
 }
 
-header {
+header { /*puede ser que el tamaño sea un poco grande  para pamntallas pequeñas  un de las solucion  padding 60px 0;*/
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -18,6 +18,8 @@ header {
 }
 
 header h1 {
+    /*sin adaptacion para mobil se podria agregar @media(max-width:768px{header h1{font-size:2em;}} */
+
     font-size: 2.5em;
 }
 
@@ -34,7 +36,7 @@ header h1 {
 .btn:hover {
     background-color: #0056b3;
 }
-
+ /* sin margen exteriro o lateral  esto puede hacer que el contenido se vea pegado a los bordes.  section{padding: 50px 5%;}*/ 
 section {
     padding: 50px 0;
 }
@@ -63,7 +65,8 @@ h2 {
     font-style: italic;
 }
 
-.testimonial cite {
+.testimonial cite { 
+    /* se puede mejorar  con line-height esto es para  que sea mas legible */
     font-weight: bold;
 }
 
@@ -102,3 +105,4 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+/* fin de los comentarios */
