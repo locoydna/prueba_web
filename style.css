@@ -1,0 +1,135 @@
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #c0c0c0;
+}
+
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px 10px;
+    background-color: rgba(10, 10, 10, 0.8);
+}
+
+.ad-img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #005f99;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+.main-content {
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to bottom, #1b2838, #0a0a0a);
+    color: #c0c0c0;
+    padding: 50px 0;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00aaff;
+    text-shadow: 3px 3px 8px #005f99;
+}
+
+h2 {
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #8b6508;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #005f99;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 2px solid #005f99;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #005f99;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #00aaff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px #000;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003f66;
+    border-color: #ffd700;
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
